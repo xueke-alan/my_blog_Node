@@ -23,4 +23,4 @@ pnpm-debug.log*
 *.sw?
 
 
-secret.js
+/secret/secret.js

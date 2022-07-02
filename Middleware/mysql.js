@@ -1,5 +1,5 @@
 const Sequelize = require("sequelize");
-const secret = require("./secret");
+const secret = require("../secret/secrett/secret");
 const db = new Sequelize(...secret.sequelize);
 
 
