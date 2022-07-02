@@ -2,6 +2,7 @@ const Sequelize = require("sequelize");
 const secret = require("./secret");
 const db = new Sequelize(...secret.sequelize);
 
+
 function GetStr(url) {
   switch (url) {
     case "/articlesall":
