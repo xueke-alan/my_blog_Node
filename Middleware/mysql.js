@@ -1,9 +1,6 @@
 const Sequelize = require("sequelize");
-const db = new Sequelize("myblog", "xueke", "Xk990704", {
-  host: "gz-cynosdbmysql-grp-gwzb3vtp.sql.tencentcdb.com",
-  port: 28565,
-  dialect: "mysql",
-});
+const secret = require("./secret");
+const db = new Sequelize(...secret.sequelize);
 
 function GetStr(url) {
   switch (url) {
